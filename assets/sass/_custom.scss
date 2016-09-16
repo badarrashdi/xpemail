@@ -247,13 +247,12 @@ header {
 				tr {
 					th {
 						border-bottom: 0;
-						padding-left:10px;
-						padding-right: 10px;
+						padding: 8px 10px;
 						&:first-child {
 						text-align: right;
 						vertical-align: middle;
 							label.chkmail {
-								margin-top:7px;
+								margin-top:15px;
 							}
 						}
 						.refresh {
@@ -393,7 +392,7 @@ header {
 			.recp-nme {
 				font-size: 18px;
 				font-family: 'GothamMedium';
-				margin:0;
+				margin:15px 0 0;
 
 			}
 			.mail-content {
@@ -503,7 +502,7 @@ header {
 		border:0;
 		box-shadow: none;
 		position: relative;
-	    top: -7px;
+	    top: 0px;
 	    left: -17px;
 
 		.caret {
@@ -521,23 +520,22 @@ header {
 	}
 }
 // checkbox styling
-input[type=checkbox] + label:before {
-  font-family: FontAwesome;
-  display: inline-block;
-  color: #9b9a9b;
-  font-weight: normal;
-  position: relative;
-  top: -5px;
-  font-size: 26px;
-}
-.chkmail {
-		width: 20px;
-}
-input[type=checkbox] + label:before { content: "\f096"; } /* unchecked icon */
-input[type=checkbox] + label:before { letter-spacing: 10px; } /* space between checkbox and label */
 
-input[type=checkbox]:checked + label:before { content: "\f046"; } /* checked icon */
-input[type=checkbox]:checked + label:before { letter-spacing: 5px; } /* allow space for check mark */
+.chkmail {
+		width: 23px;
+		height: 23px;
+}
+
+input[type=checkbox] + label {
+	width: 23px;
+	height: 23px;
+	background: url(../images/chk-icon.jpg) 0 0 no-repeat;
+}
+input[type=checkbox]:checked + label {
+	width: 23px;
+	height: 23px;
+	background: url(../images/chk-icon.jpg) -23px 0 no-repeat;
+}
 
 // user menu
  // user menu
