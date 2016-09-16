@@ -26,6 +26,12 @@ xpCoin.composeModals = function () {
 	
 }
 
+ //$(".flex-item").niceScroll(".flex-item .inner-mail-detail",{boxzoom:true});
+ var nice = $(".flex-item").niceScroll({
+ 	cursorwidth: "10px", 
+ 	cursorcolor:"#999"
+ });
+
 xpCoin.idIncr();
 xpCoin.composeModals();
 // function init
